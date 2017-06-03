@@ -11,40 +11,14 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 
-  <style>
-    @font-face {
-      font-family: 'NotoSansTC';
-      src: url('fonts/noto_sans/NotoSansTC-Regular.otf');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'NotoSansTC';
-      src: url('fonts/noto_sans/NotoSansTC-Bold.otf');
-      font-weight: bold;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'NotoSerifTC';
-      src: url('fonts/noto_serif/NotoSerifCJKtc-Regular.otf');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'NotoSerifTC';
-      src: url('fonts/noto_serif/NotoSerifCJKtc-Bold.otf');
-      font-weight: bold;
-      font-style: normal;
-    }
-  </style>
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
+  <div class="language">
+
+  </div>
 
   <div class="navbar-fixed">
     <nav class="nav-extended  light-green lighten-1">
@@ -73,24 +47,37 @@
 
 
   <div class="parallax-container">
+    <a href="en/index.html" style="float: right; margin: 2% 2% 0% 0%">English Version</a>
+    <div style="clear: both;"></div>
     <div class="row">
 
       <div class="parallax"><img src="img/layer.png"></div>
       <div style="align-items:center; display:flex; height:250px;">
-        <div class="col s5 m3 l2">
-          <img src="img/PAMUN.png" style="width:100%; margin-left:10%; margin-top:10%;">
+        <div class="col s5 m3 l2 offset-m1 offset-l2">
+          <img src="img/PAMUN.png" style="width:100%; margin-left:10%; margin-top:9%;">
         </div>
         <div class="col s7 m9 l10" style="text-align: center;">
-          <span style="font-family: 'NotoSerifTC', serif; position: relative; vertical-align: middle; font-size: 8vw; font-weight: bold;">世界，咫尺</span>
+          <span class="text" style="position: relative; vertical-align: middle; font-size: 8vw; font-weight: bold;">世界，咫尺</span>
         </div>
       </div>
 
-      <div class="hide-on-med-and-down" style="align-items:center; display:flex; height:550px;">
-        <div class="col s6" style="text-align: center;">
-          <span style="font-family: 'NotoSerifTC', serif; position: relative; vertical-align: middle; font-size: 3.5vw; font-weight: bold;">你與世界的橋樑</br>世界與台灣的通道</br>近一步理解我們的願景</span>
+      <div class="hide-on-small-only" style="align-items:center; display:flex;">
+        <div class="col m6 l4" style="text-align: center;">
+          <span class="text " style="font-size: 3.5vw; font-weight: bold;">你與世界的橋樑</br>世界與台灣的通道</br></span>
+          <a href="vision.html" class="waves-effect waves-teal btn-flat" style="font-size: 2vw; margin-top:1vw; margin-bottom:40px ">近一步理解我們的願景</a>
         </div>
-        <div class="col s6 l4" style="height:550px;">
-          <img src="img/main_Visual.png" style="height:80%; ">
+        <div class="col m7 l5 " style="height:400px; margin-top: 50px;">
+          <img src="img/main_Visual.png" style=" margin: auto; height:80%; ">
+        </div>
+      </div>
+
+      <div class="hide-on-med-and-up">
+        <div class="col s8 offset-3 " style="text-align: center; height:400px; margin-top:5px; margin-left: 15%">
+          <div style="margin-bottom:5vw ; ">
+            <img src="img/main_Visual.png" style=" margin: auto; width:75%;">
+          </div>
+          <span class="text " style=" font-size: 5vw; font-weight: bold;">你與世界的橋樑</br>世界與台灣的通道</br></span>
+          <a href="vision.html" class="waves-effect waves-teal btn-flat" style="font-size: 3.5vw; margin-top:1vw; margin-bottom:40px ">近一步理解我們的願景</a>
         </div>
       </div>
 
