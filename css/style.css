@@ -15,7 +15,7 @@ body{
 }
 
 .language{
-  background: ##E6D8E8 !important;
+  background: #E6D8E8 !important;
 }
 
 .counter{
@@ -24,4 +24,39 @@ body{
 
 .box{
   margin: 25px 0px
+}
+
+.section-header{
+  background: #E6D8E8 !important;
+  font-size: 40px;
+  line-height: 80px;
+  text-align: center;
+}
+
+
+#accordion {
+list-style: none;
+padding: 0;
+height: 500px;
+overflow: hidden;
+background: #555555;}
+
+#accordion li {
+float: left;
+border-left:
+display: block;
+height: 500px;
+width: 25%;
+overflow: hidden;
+text-decoration: none;
+font-size: 16px;
+}
+
+#accordion li img {
+border: none;
+float: left;
+}
+
+#accordion li.active {
+width: 50%;
 }

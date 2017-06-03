@@ -23,6 +23,15 @@ $(document).ready(function() {
     triggerOnce: !0
   });
 
+  activeItem = $("#accordion li:first");
+  $(activeItem).addClass('active');
+
+  $("#accordion li").hover(function(){
+      $(activeItem).animate({width: "25%"}, {duration:300, queue:false});
+      $(this).animate({width: "50%"}, {duration:300, queue:false});
+      activeItem = this;
+  });
+
 
   $('.parallax').parallax();
 
