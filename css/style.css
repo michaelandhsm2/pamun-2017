@@ -17,3 +17,11 @@ body{
 .language{
   background: ##E6D8E8 !important;
 }
+
+.counter{
+  font-size: 30px;
+}
+
+.box{
+  margin: 25px 0px
+}
