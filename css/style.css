@@ -40,24 +40,74 @@ list-style: none;
 padding: 0;
 height: 500px;
 overflow: hidden;
-background: #555555;}
+}
 
 #accordion li {
 float: left;
 border-left:
 display: block;
 height: 500px;
-width: 25%;
+width: 16.25%;
 overflow: hidden;
 text-decoration: none;
 font-size: 16px;
 }
 
-#accordion li img {
+#pics {
 border: none;
 float: left;
+
 }
 
-#accordion li.active {
-width: 50%;
+#v-accordion li.active {
+width: 37%;
+}
+
+#v-accordion {
+list-style: none;
+padding: 0;
+height: 800px;
+overflow: hidden;
+}
+
+#v-accordion li {
+float: left;
+border-left:
+display: block;
+height: 200px;
+overflow: hidden;
+text-decoration: none;
+font-size: 16px;
+}
+
+#v{
+list-style: none;
+padding: 0;
+height: 500px;
+overflow: hidden;
+}
+#v li img {
+}
+#v > li > .row {
+    display: none; // used to hide sub-menus
+}
+.panel .active {
+height: 400px;
+}
+.panel{
+height: 0px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.card-title h5{
+  font-size: 18px;
+}
+
+.card-title p{
+  font-size: 12px;
 }
