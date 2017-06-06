@@ -53,13 +53,13 @@ $(document).ready(function() {
 
   $('.parallax').parallax();
   $('.carousel').carousel();
-  
+
 
   // fade in .navbar
   $(function() {
     $(window).scroll(function() {
       // set distance user needs to scroll before we start fadeIn
-      if ($(this).scrollTop() > 310) {
+      if ($(this).scrollTop() > 700) {
         $('.navbar-fixed').fadeIn();
       } else {
         $('.navbar-fixed').fadeOut();

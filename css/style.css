@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 */
 
+
 #no-pointer {
    pointer-events: none;
    cursor: default;
@@ -12,8 +13,9 @@ body{
 }
 
 .text{
-  font-family: 'Noto Sans TC', sans-serif;
+  font-family: 'Noto Sans TC',  sans-serif;
 }
+
 
 .language{
   background: #E6D8E8 !important;
@@ -28,10 +30,13 @@ body{
 }
 
 .section-header{
-  background: #E6D8E8 !important;
+  background: #64b5f6 !important;
   font-size: 40px;
   line-height: 80px;
   text-align: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
 }
 
 
