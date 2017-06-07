@@ -2,34 +2,32 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 */
 
-
 #no-pointer {
-   pointer-events: none;
-   cursor: default;
+  pointer-events: none;
+  cursor: default;
 }
 
-body{
+body {
   background: #d4deea !important;
 }
 
-.text{
-  font-family: 'Noto Sans TC',  sans-serif;
+.text {
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
-
-.language{
+.language {
   background: #E6D8E8 !important;
 }
 
-.counter{
+.counter {
   font-size: 30px;
 }
 
-.box{
+.box {
   margin: 25px 0px
 }
 
-.section-header{
+.section-header {
   background: #64b5f6 !important;
   font-size: 40px;
   line-height: 80px;
@@ -39,80 +37,162 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-
 #accordion {
-list-style: none;
-padding: 0;
-height: 500px;
-overflow: hidden;
+  list-style: none;
+  padding: 0;
+  height: 500px;
+  overflow: hidden;
 }
 
 #accordion li {
-float: left;
-border-left:
-display: block;
-height: 500px;
-width: 16.25%;
-overflow: hidden;
-text-decoration: none;
-font-size: 16px;
+  float: left;
+  border-left: display: block;
+  height: 500px;
+  width: 16.25%;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 #pics {
-border: none;
-float: left;
-
+  border: none;
+  float: left;
 }
 
 #v-accordion li.active {
-width: 37%;
+  width: 37%;
 }
 
 #v-accordion {
-list-style: none;
-padding: 0;
-height: 800px;
-overflow: hidden;
+  list-style: none;
+  padding: 0;
+  height: 800px;
+  overflow: hidden;
 }
 
 #v-accordion li {
-float: left;
-border-left:
-display: block;
-height: 200px;
-overflow: hidden;
-text-decoration: none;
-font-size: 16px;
+  float: left;
+  border-left: display: block;
+  height: 200px;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-#v{
-list-style: none;
-padding: 0;
-height: 500px;
-overflow: hidden;
+#v {
+  list-style: none;
+  padding: 0;
+  height: 500px;
+  overflow: hidden;
 }
-#v li img {
+
+#v li img {}
+
+#v>li>.row {
+  display: none; // used to hide sub-menus
 }
-#v > li > .row {
-    display: none; // used to hide sub-menus
-}
+
 .panel .active {
-height: 400px;
-}
-.panel{
-height: 0px;
-    overflow: hidden;
+  height: 400px;
 }
 
+.panel {
+  height: 0px;
+  overflow: hidden;
+}
 
 
+/*
+.flex-column{
+  height: 200px;
+  display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-column h5{
+  font-size: 2vw;
+  line-height: 2.5vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800
+}
+
+.flex-column p{
+  font-size: 1.3vw;
+  line-height:1.9vw;
+}
+*/
+
+.wrapper {
+  position: relative;
+  padding: 0;
+  height: 600px;
+  display: block;
+}
+
+.wrapper2 {
+  position: relative;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
 
 
+.words-on-pics {
+  position: absolute;
+  top: 0;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.7);
+    height:100%;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
-.card-title h5{
+.words-on-pics:hover {
+  opacity: 1;
+}
+
+.words-title {
+  font-size: 36px;
+  line-height: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+
+.words-line {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.words-button {
+  font-size: 14px;
+  line-height: 30px;
+  color: #BBBBBB;
+}
+
+.wrapper>img {
+  z-index: 1;
+  height: 100%;
+  max-width: 100%;
+}
+
+
+.wrapper2>img {
+  z-index: 1;
+  width: 100%;
+}
+
+.card-title h5 {
   font-size: 18px;
 }
 
-.card-title p{
+.card-title p {
   font-size: 12px;
 }
