@@ -2,9 +2,27 @@
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 */
 
+
+.footer-fixed  {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   width:100%;
+   height: 40px;
+   margin: 0;
+   padding: 0;
+   z-index: 997;
+   vertical-align: middle;
+}
+
+
 #no-pointer {
   pointer-events: none;
   cursor: default;
+}
+
+.light{
+  text-align: justify;
 }
 
 body, html {

@@ -26,33 +26,57 @@ $(document).ready(function() {
   activeItem = $("#accordion li:first");
   $(activeItem).addClass('active');
 
-  $("#accordion li").hover(function(){
-      $(activeItem).animate({width: "16.25%"}, {duration:300, queue:false});
-      $(this).animate({width: "37%"}, {duration:300, queue:false});
-      activeItem = this;
+  $("#accordion li").hover(function() {
+    $(activeItem).animate({
+      width: "16.25%"
+    }, {
+      duration: 300,
+      queue: false
+    });
+    $(this).animate({
+      width: "37%"
+    }, {
+      duration: 300,
+      queue: false
+    });
+    activeItem = this;
   });
 
   activeItem2 = $("#v-accordion li:first #panel");
   $(activeItem2).addClass('active');
 
-  $("#v-accordion li img").hover(function(){
-      $(activeItem2).animate({height: "0px"}, {duration:300, queue:false});
-      $(this).parent().find('#panel').animate({height: "400px"}, {duration:300, queue:false});
-      activeItem2 = this;
+  $("#v-accordion li img").hover(function() {
+    $(activeItem2).animate({
+      height: "0px"
+    }, {
+      duration: 300,
+      queue: false
+    });
+    $(this).parent().find('#panel').animate({
+      height: "400px"
+    }, {
+      duration: 300,
+      queue: false
+    });
+    activeItem2 = this;
   });
 
-  $('#v > li > img').hover(function(){
-      if ($(this).attr('class') != 'active'){
-        $('#nav li div').slideUp();
-        $(this).next().slideToggle();
-        $('#nav li img').removeClass('active');
-        $(this).addClass('active');
-      }
+  $('#v > li > img').hover(function() {
+    if ($(this).attr('class') != 'active') {
+      $('#nav li div').slideUp();
+      $(this).next().slideToggle();
+      $('#nav li img').removeClass('active');
+      $(this).addClass('active');
+    }
   });
 
 
   $('.parallax').parallax();
-  $('.carousel').carousel({padding: 20, shift:40});
+  $('.carousel').carousel({
+    padding: 20,
+    shift: 40,
+    dist: -80
+  });
 
 
   // fade in .navbar
@@ -60,8 +84,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
       // set distance user needs to scroll before we start fadeIn
       if ($(this).scrollTop() > 700) {
+        $('.footer-fixed').fadeIn();
         $('.navbar-fixed').fadeIn();
       } else {
+        $('.footer-fixed').fadeOut();
         $('.navbar-fixed').fadeOut();
       }
     });
