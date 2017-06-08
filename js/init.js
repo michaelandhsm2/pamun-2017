@@ -52,7 +52,7 @@ $(document).ready(function() {
 
 
   $('.parallax').parallax();
-  $('.carousel').carousel();
+  $('.carousel').carousel({padding: 20, shift:40});
 
 
   // fade in .navbar
