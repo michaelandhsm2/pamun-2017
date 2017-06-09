@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $('.navbar-fixed').hide();
+    $('.footer-fixed').hide();
   $('.counter-1').counterUp({
     time: 1000
   });
