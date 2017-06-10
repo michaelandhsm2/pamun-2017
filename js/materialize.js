@@ -4565,6 +4565,19 @@ if (jQuery) {
           { duration: 80, delay: time });
         time += 40;
       });
+
+
+      $this.find('ul .btn-text-floating').velocity(
+        { scaleY: ".01", scaleX: ".01", translateY: offsetY + 'px', translateX: offsetX + 'px'},
+        { duration: 0 });
+
+      var time = 40;
+      $this.find('ul .btn-text-floating').reverse().each( function () {
+        $(this).velocity(
+          { opacity: "1", scaleX: "1", scaleY: "1", translateY: "0", translateX: '0'},
+          { duration: 100, delay: time });
+        time += 60;
+      });
     }
   };
 

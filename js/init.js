@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.navbar-fixed').hide();
-    $('.footer-fixed').hide();
+  $('.footer-fixed').hide();
+  $('#bar-text').hide();
   $('.counter-1').counterUp({
     time: 1000
   });
@@ -94,5 +95,16 @@ $(document).ready(function() {
     });
   });
 
+
+  $('.final').waypoint(function(direction) {
+   if (direction === 'down') {
+     $('.tap-target').tapTarget('open');
+     $('#bar-text').fadeIn();
+   }
+   else {
+       $('.tap-target').tapTarget('close');
+       $('#bar-text').fadeOut();
+   }
+ }, { offset: '80%' });
 
 });
