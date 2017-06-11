@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('.navbar-fixed').hide();
   $('.footer-fixed').hide();
   $('#bar-text').hide();
+    $('ul.tabs').tabs();
   $('.counter-1').counterUp({
     time: 1000
   });

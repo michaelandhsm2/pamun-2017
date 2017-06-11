@@ -17,6 +17,22 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-100829759-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
@@ -28,11 +44,10 @@
     <nav class="nav-extended   blue darken-2 ">
       <div class="nav-wrapper" style="margin-left: 20px; margin-right: 20px;">
         <div class="hide-on-med-and-up brand-logo  ">
-          <img src="img/logo_mid_60x60.png" style="vertical-align: middle;"> <span style="vertical-align: middle;">PAMUN 2017</span>
-
+          <a href="index.html"><img src="img/logo_mid_60x60.png" style="vertical-align: middle;"> <span style="vertical-align: middle;">PAMUN 2017</span></a>
         </div>
         <div class="hide-on-small-only">
-          <img src="img/logo_mid_60x60.png" style="vertical-align: middle;"> <span style="vertical-align: middle;margin-left: 0.5rem; left: 0.5rem;font-size: 2.1rem;">PAMUN 2017</span>
+          <a href="index.html"><img src="img/logo_mid_60x60.png" style="vertical-align: middle;"> <span style="vertical-align: middle;margin-left: 0.5rem; left: 0.5rem;font-size: 2.1rem;">PAMUN 2017</span></a>
 
           <ul class="right ">
             <li class="active"><a href="index.html"><i class="material-icons">home</i></a></li>
@@ -113,7 +128,7 @@
   </div>
 
   <div class="fixed-action-btn">
-    <span class="text" id="bar-text" style="background-color: rgba(255,255,255,0.7); margin: 0px 35px 0px 0px;">立即報名</span>
+    <span class="text" id="bar-text" style="background-color: rgba(100,181,246, 0.8); margin: 0px 35px 0px 0px; z-index: 500;">立即報名</span>
 
     <a id="register" class="btn-floating btn-large blue darken-2">
       <i class="large material-icons">mode_edit</i>
@@ -121,17 +136,18 @@
     <ul>
       <li>
         <span class="btn-text-floating ">個人報名</span>
-        <a class="btn-floating red"><i class="material-icons">perm_identity</i></a>
+        <a class="btn-floating red" target="_blank" href="https://goo.gl/v4NPMl"><i class="material-icons">perm_identity</i></a>
       </li>
       <li>
         <span class="btn-text-floating">團體報名</span>
-        <a class="btn-floating yellow darken-1"><i class="material-icons">supervisor_account</i></a>
+        <a class="btn-floating yellow darken-1" target="_blank" href="https://goo.gl/F3bRPP"><i class="material-icons">supervisor_account</i></a>
       </li>
       <li>
         <span class="btn-text-floating">報名介紹</span>
-        <a class="btn-floating green"><i class="material-icons">error_outline</i></a>
+        <a class="btn-floating green" href="registration.html"><i class="material-icons">error_outline</i></a>
       </li>
     </ul>
+
   </div>
 
 
@@ -171,21 +187,21 @@
             <h4 class="text">各式議題</h4>
             <img src="img/Artboard 1.png" style="width: 100%; max-width: 150px">
             <h5 class="text">討論議題廣泛</br>符合你的興趣與專業</h5>
-            <p class="light" style="margin: 20px 10px; font-size: 16px">我們提供人權、金融、政治、國際安全等領域，精選國際社會中熱切討論的議題，讓你站在世界發展的前端!</p>
+            <p class=" text" style="margin: 20px 10px; font-size: 16px; text-align: justify;">我們提供人權、金融、政治、國際安全等領域，精選國際社會中熱切討論的議題，讓你站在世界發展的前端!</p>
           </div>
 
           <div class="col s8 m4 offset-s2 center box">
             <h4 class="text">多元討論</h4>
             <img src="img/Artboard 2.png" style="width: 100%; max-width: 150px">
             <h5 class="text">多方面向的意見交鋒</br>前所未有的討論體驗</h5>
-            <p class="light" style="margin: 20px 10px; font-size: 16px">你的想法可能與學校的朋友們相似，但在PAMUN有來自不同科系及各個國家的代表，你們將交流彼此的見解，並激盪出更多的看法!</p>
+            <p class=" text" style="margin: 20px 10px; font-size: 16px; text-align: justify;">你的想法可能與學校的朋友們相似，但在PAMUN有來自不同科系及各個國家的代表，你們將交流彼此的見解，並激盪出更多的看法!</p>
           </div>
 
           <div class="col s8 m4 offset-s2 center box">
             <h4 class="text">專業學術</h4>
             <img src="img/Artboard 3.png" style="width: 100%; max-width: 150px">
             <h5 class="text">高標準的學術教學</br>幫助代表面對挑戰</h5>
-            <p class="light " style="margin: 20px 10px; font-size: 16px">不管是新手或是有經驗的代表，你將可以透過我們提供的教學影片、準備手冊、或與專業的學術部聯繫，幫助你順利的參與會議討論。</p>
+            <p class=" text" style="margin: 20px 10px; font-size: 16px; text-align: justify;">不管是新手或是有經驗的代表，你將可以透過我們提供的教學影片、準備手冊、或與專業的學術部聯繫，幫助你順利的參與會議討論。</p>
           </div>
           <div class="center">
 
@@ -199,21 +215,21 @@
             <h4 class="text">各式議題</h4>
             <img src="img/Artboard 1.png" style="width: 100%; max-width: 150px">
             <h5 class="text">討論議題廣泛</br>符合你的興趣與專業</h5>
-            <p class="light" style="margin: 20px 10px; font-size: 16px">我們提供人權、金融、政治、國際安全等領域，精選國際社會中熱切討論的議題，讓你站在世界發展的前端!</p>
+            <p class=" text" style="margin: 20px 10px; font-size: 16px; text-align: justify;">我們提供人權、金融、政治、國際安全等領域，精選國際社會中熱切討論的議題，讓你站在世界發展的前端!</p>
           </div>
 
           <div class="col s8 m4 offset-s2 center box">
             <h4 class="text">多元討論</h4>
             <img src="img/Artboard 2.png" style="width: 100%; max-width: 150px">
             <h5 class="text">多方面向的意見交鋒</br>前所未有的討論體驗</h5>
-            <p class="light" style="margin: 20px 10px; font-size: 16px">你的想法可能與學校的朋友們相似，但在PAMUN有來自不同科系及各個國家的代表，你們將交流彼此的見解，並激盪出更多的看法!</p>
+            <p class=" text" style="margin: 20px 10px; font-size: 16px; text-align: justify;">你的想法可能與學校的朋友們相似，但在PAMUN有來自不同科系及各個國家的代表，你們將交流彼此的見解，並激盪出更多的看法!</p>
           </div>
 
           <div class="col s8 m4 offset-s2 center box">
             <h4 class="text">專業學術</h4>
             <img src="img/Artboard 3.png" style="width: 100%; max-width: 150px">
             <h5 class="text">高標準的學術教學</br>幫助代表面對挑戰</h5>
-            <p class="light " style="margin: 20px 10px; font-size: 16px">不管是新手或是有經驗的代表，你將可以透過我們提供的教學影片、準備手冊、或與專業的學術部聯繫，幫助你順利的參與會議討論。</p>
+            <p class=" text" style="margin: 20px 10px; font-size: 16px; text-align: justify;">不管是新手或是有經驗的代表，你將可以透過我們提供的教學影片、準備手冊、或與專業的學術部聯繫，幫助你順利的參與會議討論。</p>
 
           </div>
           <div class="center" style="padding: 4vw">
@@ -268,7 +284,7 @@
           <a href="event.html" class="wrapper2">
             <div class="words-on-pics">
               <span class="words-title">Night 1</br></span>
-              <span class="words-line">
+              <span class="words-line text">
                 美食是世界共通的語言 </br> 味蕾將帶領你遨遊世界</br>
               </span>
               <span class="text words-button">
@@ -280,7 +296,7 @@
           <a href="event.html" class="wrapper2">
             <div class="words-on-pics">
               <span class="words-title">Night 2</br></span>
-              <span class="words-line">
+              <span class="words-line text">
                 疲憊的心乘著繽紛的泡泡飛舞 </br> 輕鬆 微醺 泳池畔的夜晚</br>
               </span>
               <span class="text words-button">
@@ -292,7 +308,7 @@
           <a href="event.html" class="wrapper2">
             <div class="words-on-pics">
               <span class="words-title">Night 3</br></span>
-              <span class="words-line">
+              <span class="words-line text">
                 青春是時光若有似無的尾巴</br>今晚 將是你重拾往日與回憶的起頭 </br>
               </span>
               <span class="text words-button">
@@ -323,8 +339,8 @@
                 </div>
                 <div class="col s8 card-title">
                   <h5>Vincent Tsao </h5>
-                  <p>
-                    Mckinsey & Company, Organization Solution Coach
+                  <p class="text" style="font-size: 14px">
+                    現職於麥肯錫顧問公司
                   </p>
                 </div>
               </div>
@@ -332,8 +348,8 @@
           </a>
           <a class="carousel-item" href="#two!">
             <div class="card-panel grey lighten-5 z-depth-1">
-              <p class="black-text">
-                對我而言，模聯開啟了通往世界的門
+              <p class="black-text text" style="font-size: 15px">
+                 對我而言，模聯是通往世界的大門
               </p>
               <div class="row valign-wrapper ">
                 <div class="col s4">
@@ -342,7 +358,7 @@
                 </div>
                 <div class="col s8 card-title">
                   <h5>Lucie Tsai</h5>
-                  <p>
+                  <p class="text" style="font-size: 14px">
                     人權公約施行監督聯盟研究員
                   </p>
                 </div>
@@ -361,8 +377,8 @@
                 </div>
                 <div class="col s8 card-title">
                   <h5>Ingmar Salim</h5>
-                  <p>
-                    NUS, Head Delegate in PAMUN 2015
+                  <p class="text" style="font-size: 14px">
+                    新加坡國立大學代表團團長
                   </p>
                 </div>
               </div>
@@ -380,8 +396,8 @@
                 </div>
                 <div class="col s8 card-title">
                   <h5>Ederson Chang</h5>
-                  <p>
-                    Columbia University, M.S. Management Science and Engineering
+                  <p class="text" style="font-size: 14px">
+                    哥倫比亞大學 管理科學與工程碩士
                   </p>
                 </div>
               </div>
@@ -421,11 +437,11 @@
             <div id="mc_embed_signup">
               <form action="//panasiamun.us15.list-manage.com/subscribe/post?u=7ee2312f44383f7e8b6ae3d18&amp;id=75af5675de" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
-                  <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                  <label class="text" style="font-size: 18px; margin:10" for="mce-EMAIL">訂閱我們的最新消息</label>
                   <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7ee2312f44383f7e8b6ae3d18_75af5675de" tabindex="-1" value=""></div>
-                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                  <div class="clear"><input type="submit" value="立即行動" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                 </div>
               </form>
             </div>

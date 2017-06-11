@@ -5029,7 +5029,6 @@ small {
 .tabs .tab.disabled a,
 .tabs .tab.disabled a:hover {
   color: rgba(21, 101, 192, 0.5);
-  background-color: rgba(255, 255, 255, 1) !important;
   cursor: default;
 }
 
