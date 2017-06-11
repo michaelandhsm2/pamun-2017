@@ -25,44 +25,6 @@ $(document).ready(function() {
     triggerOnce: !0
   });
 
-  activeItem = $("#accordion li:first");
-  $(activeItem).addClass('active');
-
-  $("#accordion li").hover(function() {
-    $(activeItem).animate({
-      width: "16.25%"
-    }, {
-      duration: 300,
-      queue: false
-    });
-    $(this).animate({
-      width: "37%"
-    }, {
-      duration: 300,
-      queue: false
-    });
-    activeItem = this;
-  });
-
-  activeItem2 = $("#v-accordion li:first #panel");
-  $(activeItem2).addClass('active');
-
-  $("#v-accordion li img").hover(function() {
-    $(activeItem2).animate({
-      height: "0px"
-    }, {
-      duration: 300,
-      queue: false
-    });
-    $(this).parent().find('#panel').animate({
-      height: "400px"
-    }, {
-      duration: 300,
-      queue: false
-    });
-    activeItem2 = this;
-  });
-
   $('#v > li > img').hover(function() {
     if ($(this).attr('class') != 'active') {
       $('#nav li div').slideUp();
