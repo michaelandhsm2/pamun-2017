@@ -51,6 +51,10 @@ body, html {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+.eng-text{
+  font-family: 'Roboto', sans-serif;
+}
+
 .language {
   background: #E6D8E8 !important;
 }
