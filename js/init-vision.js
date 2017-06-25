@@ -1,8 +1,10 @@
 
 $(document).ready(function() {
-    $('.tap-target').tapTarget('open');
-    $('#bar-text').fadeIn();
-        $('.parallax').parallax();
+  $('#bar-text').hide();
+      $('.tap-target').tapTarget('close');
+    $('ul.tabs').tabs();
 
+       $('.vision').matchHeight();
+       $('.history').matchHeight();
 
 });
