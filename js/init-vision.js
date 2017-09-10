@@ -5,6 +5,6 @@ $(document).ready(function() {
     $('ul.tabs').tabs();
 
        $('.vision').matchHeight();
-       $('.history').matchHeight();
+              $('.history').matchHeight();
 
 });
